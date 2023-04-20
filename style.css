@@ -1,66 +1,67 @@
-:root{
-   --color1:#926239;
-   --color2: white;
-}
-.body{
-  display: inline-block;
-  margin: 0;
-  line-height: 20px;
-  font-size: 20px;
+*{
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
 }
 
-.header{
-   width: 100vw;
-   height: 100vh;
-   margin-top: 10%;
-   margin-left: 10%;
-   margin-right: 10%;
-   background-image: url(beach.jpg);
-   background-size: cover;
+.body {
+   min-height: 300vh;
+}
+
+.header {
+   position: sticky;
+   top: 0;
+   left: 0;
+   right: 0;
+   background-color: pink;
+}
+
+.nav {
+   max-width: 700px;
+   margin: 0 auto;
    text-align: center;
-   padding: 30px;
-   color: var(--color1);
 }
 
-.h1{
-   font-size: 50px;
+.nav-list {
+   font-size: 0;
+}
+
+.nav-link {
+   display: block;
+   padding: 20px 30px;
    font-weight: bold;
-}
-.button{
-   padding: 10px 10px;
-   border: 1 solid var(--color1);
-   border-radius: 10%;
-}
-.button:hover,
-.button:focus{
-   background-color: var(--color1);
-   border-radius: 10%;
-}
-.section1{
-   background-color: var(--color1);
-   text-align: center;
-   padding: 10px;
-   color: var(--color2);
+   text-decoration: none;
+   color: red;
+   transition-property: background-color, black;
+   transition-duration: 300ms;
+   transition-delay: 0;
+   transition-timing-function: linear;
 }
 
-.section2{
-   background-color: var(--color2);
-   text-align: center;
-   padding: 10px;
-   color: var(--color1);
+.nav-link:hover {
+   background-color: limegreen;
+   color: black;
+ 
 }
-.table{
-   padding-bottom: 10px;
+
+.nav-list-item {
+   display: inline-block;
+   position: relative;
+   font-size: 16px;
 }
-.td1{
-   background-color: var(--color1);
-   color: var(--color2);
+
+.nav-list-item::before {
+   content: '';
+   display: block;
+   position: absolute;
+   width: 0px;
+   height: 5px;
+   background-color: black;
+   top: 0;
+   right: 0;
 }
-.td2{
-   background-color: var(--color2);
-   color: var(--color1);
-}
-.td3{
-   background-color: var(--color1);
-   color: var(--color2);  
+
+.nav-list-item:hover::before {
+width: 100%;
+transition: width 0.3s ease-in;
 }
