@@ -1,0 +1,71 @@
+*{
+  box-sizing: border-box;
+}
+
+:root{
+  --color1: #926239;
+  --color2: white;
+}
+
+.body{
+  margin: 0;
+  line-height: 20px;
+  font-size: 20px;
+}
+
+.header{
+  min-height: 100vh;
+  background-image: url(beach.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  text-align: center;
+  padding: 40vh 30px 30px;
+  color: var(--color1);
+}
+
+.h1 {
+  font-size: 50px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.button {
+  padding: 10px;
+  border: 1 solid var(--color1);
+  background-color: transparent;
+  border-radius: 10px;
+  color: var(--color1);
+}
+
+.button:hover,
+.button:focus {
+  background-color: var(--color1);
+  color: var(--color2);
+}
+
+.section {
+  text-align: center;
+  padding: 10px;
+} 
+
+.section1 {
+  background-color: var(--color1);
+  color: var(--color2);
+}
+
+.section2 {
+  background-color: var(--color2);
+  color: var(--color1);
+}
+
+.footer {
+  font-size: 0;
+}
+
+.small-section {
+  font-size: 20px;
+  display: inline-block;
+  width: 33.3%;
+  text-align: left;
+}
