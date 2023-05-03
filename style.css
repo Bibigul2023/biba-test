@@ -9,7 +9,7 @@ display: flex;
 justify-content: space-evenly;
 flex-wrap: wrap;
 gap: 10px;
-font-family: Calibri, 'Trebuchet MS', sans-serif;
+font-family: Calibri, sans-serif;
 }
 
 .card {
