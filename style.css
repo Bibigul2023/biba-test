@@ -41,7 +41,7 @@ rgb(156, 88, 88) 86%);
    rgb(11, 129, 112) 86%);
 }
 
-.text-1 {
+.cardname {
 font-size: 16px;
 }
 
@@ -50,7 +50,7 @@ font-size: 16px;
    margin: 20px 0 50 px;
 }
 
-.text-3 {
+.percent {
    font-size: 16px;
 } 
 
