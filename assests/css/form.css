@@ -1,0 +1,45 @@
+.form{
+  background-color: var(--footer-text-color);
+  padding: 20px 10px;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  text-align: center;
+}
+
+.request {
+  max-width: 400px;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea{
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.button-send {
+  background-color: var(--accent-color);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+}
+
+input[type="send"]:hover {
+  background-color: var(--accent-color);
+}
+
+@media screen and(min-width: 768px) {
+  .about-me-info{
+    width: 50%;
+    margin: 0 auto;
+  }
+  
+}

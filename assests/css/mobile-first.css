@@ -1,0 +1,88 @@
+:root{
+  --accent-color: #34547A;
+  --background-color: #EEEFF1;
+  --heading-color:#000000;
+  --text-color: #727272;
+  --footer-text-color: #FFFFFF;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+}
+.container {
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+   grid-template-columns: repeat(12, 1fr);
+   gap: 1.5 rem;
+}
+
+.first-heading,
+.second-heading {
+  font-weight: 500;
+}
+.first-heading {
+font-size: 3rem;
+line-height: 1.45;
+}
+
+.second-heading {
+  font-size: 2rem;
+  line-height: 1.2;
+}
+.text,
+.button {
+  font-weight: 400;
+  line-height: 1.6;
+}
+.text {
+  color: var(--text-color);
+}
+.button {
+  background-color: var(--accent-color);
+  color: var(--footer-text-color);
+  padding: 20px, 30px;
+  border: none;
+}
+
+.img{
+  display: block;
+  width: 100%;
+  height: inherit;
+}
+
+@media screen and (min-width:576px) {
+  :root {
+    font-size: 15px;
+  }
+}
+
+.container {
+  max-width: 540px;
+}
+@media screen and (min-width:768px){
+    .container {
+      max-width: 730px;
+    }
+  
+}
+@media screen and (min-width:992px){
+  :root {
+    font-size: 16px;
+  }
+}
+.container {
+  max-width: 950px;
+}
+
+@media screen and (min-width: 1200px){
+  .container{
+    max-width: 1130px;
+  }  
+}
+
+@media screen and (min-width: 1400px){
+  .container{
+    max-width: 1330px;
+  }  
+}
